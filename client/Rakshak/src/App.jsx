@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/navbar";
 import Router from "./router";
+
 function App() {
   const [count, setCount] = useState(0);
 
