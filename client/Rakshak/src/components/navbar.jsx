@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../App.css";
+import { Outlet } from "react-router-dom";
 
 function Navbar() {
   const [count, setCount] = useState(0);
@@ -267,6 +268,14 @@ function Navbar() {
           </ul>
         </div>
       </aside>
+      <div
+        style={{
+          marginLeft: "300px",
+          marginTop: "100px",
+        }}
+      >
+        <Outlet />
+      </div>
     </>
   );
 }
