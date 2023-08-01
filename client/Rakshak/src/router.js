@@ -7,13 +7,8 @@ export default function Router() {
   return useRoutes([
     {
       path: "/",
-      element: isAuthenticated ? <Navbar /> : <Navbar />,
-      children: [{ path: "/", element: <Home /> }],
-    },
-    {
-      path: "/app",
-      element: isAuthenticated ? <Navbar /> : <Navbar />,
-      children: [{ path: "/", element: <Home /> }],
+      element: <Navbar />,
+      children: [{ path: "", element: <Home /> }],
     },
   ]);
 }
